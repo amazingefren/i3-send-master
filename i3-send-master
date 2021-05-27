@@ -2,7 +2,6 @@
 
 from i3ipc.aio import Connection
 import asyncio
-import time
 
 
 # FUNC:   swap_master()
@@ -28,7 +27,8 @@ async def swap_master(ws, focused, i3):
         .format(str(master['con_id']))
     await i3.command(cmd)
     # Some apps (spotify *cough) are stealing focus after swap
-    time.sleep(0.1)
+    # time is optional
+    # + import time + time.sleep(0.35)
     await i3.command('[id={} focus]', str(focused.ipc_data['id']))
     return 0
 
