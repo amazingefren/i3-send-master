@@ -8,7 +8,7 @@ OR *master/stack layout* **minus the layout**
 ### Dependencies
 - [i3ipc-python](https://github.com/altdesktop/i3ipc-python)
 - [i3-gaps](https://github.com/Airblader/i3)
-- [Python](https://www.python.org/)
+- [python3](https://www.python.org/)
 ### Executable Permissions
 ```
 $ chmod +x ./i3-send-master
